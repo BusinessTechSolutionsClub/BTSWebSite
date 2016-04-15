@@ -198,6 +198,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\ClubOfficersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MembersController.cs" />
@@ -216,9 +217,14 @@
     <Compile Include="Migrations\201603241952239_Catorgory table.Designer.cs">
       <DependentUpon>201603241952239_Catorgory table.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604151650507_addclubofficer.cs" />
+    <Compile Include="Migrations\201604151650507_addclubofficer.Designer.cs">
+      <DependentUpon>201604151650507_addclubofficer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\ClubOfficer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Member.cs" />
@@ -296,6 +302,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\ClubOfficers\Create.cshtml" />
+    <Content Include="Views\ClubOfficers\Delete.cshtml" />
+    <Content Include="Views\ClubOfficers\Details.cshtml" />
+    <Content Include="Views\ClubOfficers\Edit.cshtml" />
+    <Content Include="Views\ClubOfficers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -320,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201603241952239_Catorgory table.resx">
       <DependentUpon>201603241952239_Catorgory table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604151650507_addclubofficer.resx">
+      <DependentUpon>201604151650507_addclubofficer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -18,5 +18,7 @@ namespace BusinessTechSolutionsWebSite.Models
         public DateTime GraduationDate { get; set; }
         public string Email { get; set; }
         public bool Memberhip { get; set; }
+
+        public virtual ClubOfficer ClubOfficer { get; set; }
     }
 }

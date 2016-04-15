@@ -34,6 +34,8 @@ namespace BusinessTechSolutionsWebSite.Models
 
         public System.Data.Entity.DbSet<BusinessTechSolutionsWebSite.Models.Category> Categories { get; set; }
 
+        public System.Data.Entity.DbSet<BusinessTechSolutionsWebSite.Models.ClubOfficer> ClubOfficers { get; set; }
+
         //Method that creates a tables 
         // public DbSet<Member> Members { get; set; }
     }
