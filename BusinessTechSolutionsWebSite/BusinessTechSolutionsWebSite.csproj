@@ -202,6 +202,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MembersController.cs" />
+    <Compile Include="Controllers\ResourcesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -221,6 +222,14 @@
     <Compile Include="Migrations\201604151650507_addclubofficer.Designer.cs">
       <DependentUpon>201604151650507_addclubofficer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604201643030_resource.cs" />
+    <Compile Include="Migrations\201604201643030_resource.Designer.cs">
+      <DependentUpon>201604201643030_resource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604201652309_resourceAttributes.cs" />
+    <Compile Include="Migrations\201604201652309_resourceAttributes.Designer.cs">
+      <DependentUpon>201604201652309_resourceAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
@@ -228,6 +237,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\Resource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -307,6 +317,11 @@
     <Content Include="Views\ClubOfficers\Details.cshtml" />
     <Content Include="Views\ClubOfficers\Edit.cshtml" />
     <Content Include="Views\ClubOfficers\Index.cshtml" />
+    <Content Include="Views\Resources\Create.cshtml" />
+    <Content Include="Views\Resources\Delete.cshtml" />
+    <Content Include="Views\Resources\Details.cshtml" />
+    <Content Include="Views\Resources\Edit.cshtml" />
+    <Content Include="Views\Resources\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -334,6 +349,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604151650507_addclubofficer.resx">
       <DependentUpon>201604151650507_addclubofficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604201643030_resource.resx">
+      <DependentUpon>201604201643030_resource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604201652309_resourceAttributes.resx">
+      <DependentUpon>201604201652309_resourceAttributes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
