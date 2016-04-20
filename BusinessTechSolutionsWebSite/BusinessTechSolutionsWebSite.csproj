@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\ClubOfficersController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MembersController.cs" />
@@ -227,13 +228,15 @@
       <DependentUpon>201604201643030_resource.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201604201652309_resourceAttributes.cs" />
-    <Compile Include="Migrations\201604201652309_resourceAttributes.Designer.cs">
-      <DependentUpon>201604201652309_resourceAttributes.cs</DependentUpon>
+    <Compile Include="Migrations\201604201721282_addcustomer.cs" />
+    <Compile Include="Migrations\201604201721282_addcustomer.Designer.cs">
+      <DependentUpon>201604201721282_addcustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\ClubOfficer.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Member.cs" />
@@ -322,6 +325,11 @@
     <Content Include="Views\Resources\Details.cshtml" />
     <Content Include="Views\Resources\Edit.cshtml" />
     <Content Include="Views\Resources\Index.cshtml" />
+    <Content Include="Views\Customers\Create.cshtml" />
+    <Content Include="Views\Customers\Delete.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Customers\Edit.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -355,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604201652309_resourceAttributes.resx">
       <DependentUpon>201604201652309_resourceAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604201721282_addcustomer.resx">
+      <DependentUpon>201604201721282_addcustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
