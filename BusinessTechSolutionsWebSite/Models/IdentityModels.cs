@@ -42,6 +42,8 @@ namespace BusinessTechSolutionsWebSite.Models
 
         public System.Data.Entity.DbSet<BusinessTechSolutionsWebSite.Models.Project> Projects { get; set; }
 
+        public System.Data.Entity.DbSet<BusinessTechSolutionsWebSite.Models.ContactUs> ContactUs { get; set; }
+
         //Method that creates a tables 
         // public DbSet<Member> Members { get; set; }
     }

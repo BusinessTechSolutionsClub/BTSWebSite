@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\ClubOfficersController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -237,10 +238,19 @@
     <Compile Include="Migrations\201604201726296_addprojects.Designer.cs">
       <DependentUpon>201604201726296_addprojects.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604242009339_addContactUs.cs" />
+    <Compile Include="Migrations\201604242009339_addContactUs.Designer.cs">
+      <DependentUpon>201604242009339_addContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604242019229_addContactUs1.cs" />
+    <Compile Include="Migrations\201604242019229_addContactUs1.Designer.cs">
+      <DependentUpon>201604242019229_addContactUs1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\ClubOfficer.cs" />
+    <Compile Include="Models\ContactUs.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -253,6 +263,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\BTSStyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -341,6 +352,11 @@
     <Content Include="Views\Projects\Details.cshtml" />
     <Content Include="Views\Projects\Edit.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\ContactUs\Create.cshtml" />
+    <Content Include="Views\ContactUs\Delete.cshtml" />
+    <Content Include="Views\ContactUs\Details.cshtml" />
+    <Content Include="Views\ContactUs\Edit.cshtml" />
+    <Content Include="Views\ContactUs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -380,6 +396,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604201726296_addprojects.resx">
       <DependentUpon>201604201726296_addprojects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604242009339_addContactUs.resx">
+      <DependentUpon>201604242009339_addContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604242019229_addContactUs1.resx">
+      <DependentUpon>201604242019229_addContactUs1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
