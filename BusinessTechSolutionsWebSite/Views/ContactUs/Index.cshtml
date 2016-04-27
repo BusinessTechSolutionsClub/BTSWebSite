@@ -1,0 +1,86 @@
+﻿@model IEnumerable<BusinessTechSolutionsWebSite.Models.ContactUs>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 style="text-align:center;">
+    Contact Us
+</h1>
+<hr style="border-color:black;" />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="contactus">
+             Faculty Representative:<br />
+             Dr. Youlong Zhuang, Assosciate Professor of<br />
+             Business Administration/Management Information Systems,<br />
+             Computer and Mathematical Sciences Department<br />
+             Office: St. Clair Hall 226<br />
+             Phone: (573) 875- 7531<br />
+             Toll Free: 800-231-2391, ext. 7531<br />
+             Address:<br />
+                1001 Rogers St.<br />
+                Columbia, MO 65216 USA<br />
+             E-mail: yzhuang@ccis.edu<br />
+                <br />
+            President: <br />
+            Mitch Dowdy<br />
+            Major: Management Information Systems<br />
+            E-mail: mdowdy1@cougars.ccis.edu<br />
+
+            Vice President:<br />
+            Viktoriia Lavrenchenko<br />
+            Major: Computer Information Systems <br />
+            E-mail: vlavrenchenko1@cougars.ccis.edu<br />
+                <br />
+            Treasurer:<br />
+            James McClendon
+            Major: Management Information Systems<br />
+            E-mail: jtmcclendon1@cougars.ccis.edu<br />
+                <br />
+            Secretary:<br />
+            Omara Ouk<br />
+            Major: Management Information Systems<br />
+            E-mail: ojouk1@cougars.ccis.edu
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12409.972240418572!2d-92.3257279!3d38.9584081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x91939e96a14e03db!2sColumbia+College!5e0!3m2!1sen!2sus!4v1461529759590" width="300" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellPhoneNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellPhoneNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>*@
